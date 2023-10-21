@@ -7,7 +7,7 @@
 .header_container {
     width: 100%;
     /* background-image: url('src/assets/images/desktop/image-header.jpg'); */
-    background: url('src/assets/images/desktop/image-header.jpg'), lightgray 0px 0px / 100% 100% no-repeat;
+    background: url('./assets/images/desktop/image-header.jpg'), lightgray 0px 0px / 100% 100% no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -86,7 +86,7 @@
 
 .egg_container {
     grid-area: 'egg';
-    background-image: url('src/assets/images/desktop/image-transform.jpg');
+    background-image: url('./assets/images/desktop/image-transform.jpg');
     background-color: var(--yellow);
     background-repeat: no-repeat;
     background-position: center;
@@ -95,7 +95,7 @@
 
 .cup_container {
     grid-area: 'cup';
-    background-image: url('src/assets/images/desktop/image-stand-out.jpg');
+    background-image: url('./assets/images/desktop/image-stand-out.jpg');
     background-color: var(--soft-red);
     background-repeat: no-repeat;
     background-position: center;
@@ -104,7 +104,7 @@
 
 .berry_container {
     grid-area: 'berry';
-    background-image: url('src/assets/images/desktop/image-graphic-design.jpg');
+    background-image: url('./assets/images/desktop/image-graphic-design.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -113,7 +113,7 @@
 
 .orange_container {
     grid-area: 'orange';
-    background-image: url('src/assets/images/desktop/image-photography.jpg');
+    background-image: url('./assets/images/desktop/image-photography.jpg');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -222,22 +222,22 @@
 
 .milk{
     grid-area: '1';
-    background-image: url('src/assets/images/desktop/image-gallery-milkbottles.jpg');
+    background-image: url('./assets/images/desktop/image-gallery-milkbottles.jpg');
 }
 
 .orange{
     grid-area: '2';
-    background-image: url('src/assets/images/desktop/image-gallery-orange.jpg');
+    background-image: url('./assets/images/desktop/image-gallery-orange.jpg');
 }
 
 .cone {
     grid-area: '3';
-    background-image: url('src/assets/images/desktop/image-gallery-cone.jpg');
+    background-image: url('./assets/images/desktop/image-gallery-cone.jpg');
 }
 
 .sugarcubes {
     grid-area: '4';
-    background-image: url('src/assets/images/desktop/image-gallery-sugarcubes.jpg');
+    background-image: url('./assets/images/desktop/image-gallery-sugarcubes.jpg');
 }
 
 .milk, .orange, .cone, .sugarcubes {
@@ -256,7 +256,7 @@
         height: 74.625rem; */
         flex-shrink: 0;
         /* background-image: url('src/assets/images/desktop/image-header.jpg'); */
-        background: url('src/assets/images/mobile/image-header.jpg'), lightgray 0px 0px / 100% 100%;
+        background: url('./assets/images/desktop/image-header.jpg'), lightgray 0px 0px / 100% 100%;
         background-repeat: no-repeat;
 
     }
