@@ -163,6 +163,7 @@
     line-height: normal;
     letter-spacing: 0.3125rem;
     margin: 10rem 0 5rem;
+    text-transform: uppercase;
 }
 
 .testimonials_list {
@@ -181,6 +182,7 @@
     font-weight: 600;
     line-height: 2rem; /* 177.778% */
     letter-spacing: -0.00806rem;
+    text-transform: none;
 }
 
 .client_name {
@@ -380,4 +382,72 @@
     .navbar_list {
         display: none;
     }
+
+    .main_container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:    'egg'
+                                'egg_text'
+                                'cup'
+                                'cup_text'
+                                'berry'
+                                'orange';
+    }
+
+    .egg_container {
+        order: -1;
+    }
+
+    .testimonials_list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 10.3rem;
+        gap: 1.9rem;
+    }
+
+    .photo {
+        margin-bottom: 2rem;
+    }
+
+    .client_testimonial {
+        margin-bottom: 2rem;
+    }
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:    '1 2' 
+                                '3 4';
+    }
+
+    .milk{
+        background-size: contain;
+        background-image: url('./assets/images/mobile/image-gallery-milkbottles.jpg');
+    }
+    
+    .orange{
+        background-size: contain;
+        background-image: url('./assets/images/mobile/image-gallery-orange.jpg');
+    }
+    
+    .cone {
+        background-size: contain;
+        background-image: url('./assets/images/mobile/image-gallery-cone.jpg');
+    }
+    
+    .sugarcubes {
+        background-image: url('./assets/images/mobile/image-gallery-sugar-cubes.jpg');
+        background-size: contain;
+    }
+
+    .milk, .orange, .cone, .sugarcubes {
+        height: 12rem;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
 }

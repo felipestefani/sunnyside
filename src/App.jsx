@@ -127,10 +127,10 @@ function App() {
         </div>
         <div className={style.footer_icons_container}>
           <ul className={style.footer_icons_list}>
-            <li className={style.footer_icon}><a className={style.link}><img src={facebook} alt="facebook icon" /></a></li>
-            <li className={style.footer_icon}><a className={style.link}><img src={instagram} alt="instagram icon" /></a></li>
-            <li className={style.footer_icon}><a className={style.link}><img src={twitter} alt="twitter icon" /></a></li>
-            <li className={style.footer_icon}><a className={style.link}><img src={pinterest} alt="pinterest icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link} href="https://github.com/felipestefani" target="_blank"><img src={facebook} alt="facebook icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link} href="https://www.instagram.com/felipestefani/" target="_blank"><img src={instagram} alt="instagram icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link} href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank"><img src={twitter} alt="twitter icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link} href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank"><img src={pinterest} alt="pinterest icon" /></a></li>
           </ul>  
         </div>   
         <div className={style.attribution}>
