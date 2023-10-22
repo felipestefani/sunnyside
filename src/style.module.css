@@ -41,6 +41,12 @@
 
 .navbar_item {
     color: #FFF;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar_item:hover {
+    color: #000;
 }
 
 .navbar_item_contact {
@@ -55,6 +61,7 @@
     line-height: 1.5625rem; /* 166.667% */
     letter-spacing: -0.00669rem;
     text-transform: uppercase;
+    transition: background 0.5s ;
 }
 
 .arrow_down {
@@ -258,7 +265,9 @@
     height: 2rem;
 }
 
-
+.footer_logo_container:hover {
+    cursor: pointer;
+}
 
 .footer_nav_list {
     display: flex;
@@ -291,11 +300,12 @@
 
 .link, .contact_link {
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .link:hover {
     cursor: pointer;
-    color: white;
+    color: hsl(0, 0%, 100%);
     filter: brightness(0) invert(1);
 }
 
@@ -345,6 +355,10 @@
 
 .learn_more_container_egg:hover, .learn_more_container_cup:hover {
     cursor: pointer;
+}
+
+.navbar_item_contact:hover {
+    background-color: hsla(0, 0%, 100%, 0.3);
 }
 
 /*--------------------------------------- media queries -------------------------------- */

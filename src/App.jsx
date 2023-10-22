@@ -10,6 +10,7 @@ import facebook from "./assets/images/icon-facebook.svg";
 import instagram from "./assets/images/icon-instagram.svg";
 import twitter from "./assets/images/icon-twitter.svg";
 import pinterest from "./assets/images/icon-pinterest.svg";
+import { Link} from "react-scroll";
 
 function App() {
   return (
@@ -17,14 +18,14 @@ function App() {
       <header className={style.header_container}>
         <div className={style.navbar_container}>
           <div className={style.logo_container}>
-            <img src={logo} alt="sunnyside logo" />
+            <img id="logo_header" title="logo_header" src={logo} alt="sunnyside logo" />
           </div>
           <div className={style.navbar_items}>
             <img className={style.hamburger_icon} src={hamburger} alt="menu hamburger" />
             <ul className={style.navbar_list}>
-              <li><a className={`${style.link} ${style.navbar_item}`} href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank">About</a></li>
-              <li><a className={`${style.link} ${style.navbar_item}`} href="https://www.instagram.com/felipestefani/" target="_blank">Services</a></li>
-              <li><a className={`${style.link} ${style.navbar_item}`} href="https://www.frontendmentor.io/profile/felipestefani" target="_blank">Projects</a></li>
+              <li><a className={`${style.navbar_item}`} href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank">About</a></li>
+              <li><a className={`${style.navbar_item}`} href="https://www.instagram.com/felipestefani/" target="_blank">Services</a></li>
+              <li><a className={`${style.navbar_item}`} href="https://www.frontendmentor.io/profile/felipestefani" target="_blank">Projects</a></li>
               <li><a className={`${style.contact_link} ${style.navbar_item_contact}`} href="https://www.instagram.com/felipestefani/" target="_blank">Contact</a></li>
             </ul>
           </div>
@@ -106,7 +107,16 @@ function App() {
       </section>
       <footer className={style.footer_container}>
         <div className={style.footer_logo_container}>
-          <img src={footer_logo} alt="logo" />
+          <Link 
+            activeClass="active"
+            to="logo_header"
+            spy={true}
+            smooth={true}
+            offset={-700}
+            duration={800}
+          >
+            <img src={footer_logo} alt="logo" />
+          </Link>
         </div>
         <div className={style.footer_nav_list_container}>
           <ul className={style.footer_nav_list}>
