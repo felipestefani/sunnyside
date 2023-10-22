@@ -6,7 +6,10 @@ import arrow_down from "./assets/images/icon-arrow-down.svg";
 import emily from "./assets/images/image-emily.jpg";
 import thomas from "./assets/images/image-thomas.jpg";
 import jennie from "./assets/images/image-jennie.jpg";
-
+import facebook from "./assets/images/icon-facebook.svg";
+import instagram from "./assets/images/icon-instagram.svg";
+import twitter from "./assets/images/icon-twitter.svg";
+import pinterest from "./assets/images/icon-pinterest.svg";
 
 function App() {
   return (
@@ -19,13 +22,12 @@ function App() {
           <div className={style.navbar_items}>
             <img className={style.hamburger_icon} src={hamburger} alt="menu hamburger" />
             <ul className={style.navbar_list}>
-              <li className={style.navbar_item}>About</li>
-              <li className={style.navbar_item}>Services</li>
-              <li className={style.navbar_item}>Projects</li>
-              <li className={style.navbar_item_contact}>Contact</li>
+              <li><a className={`${style.link} ${style.navbar_item}`} href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank">About</a></li>
+              <li><a className={`${style.link} ${style.navbar_item}`} href="https://www.instagram.com/felipestefani/" target="_blank">Services</a></li>
+              <li><a className={`${style.link} ${style.navbar_item}`} href="https://www.frontendmentor.io/profile/felipestefani" target="_blank">Projects</a></li>
+              <li><a className={`${style.contact_link} ${style.navbar_item_contact}`} href="https://www.instagram.com/felipestefani/" target="_blank">Contact</a></li>
             </ul>
           </div>
-
         </div>
         <h1>We are creatives</h1>
         <img className={style.arrow_down} src={arrow_down} alt="arrow down" />
@@ -36,7 +38,10 @@ function App() {
             <h2>Transform your brand</h2>
             <p>We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <span>Learn more</span> 
+            <div className={style.learn_more_container_egg}>
+              <div className={style.learn_more_line_egg}></div>
+              <span className={style.learn_more}>Learn more</span>
+            </div>
           </div>   
         </div>
         <div className={style.egg_container}>
@@ -49,7 +54,10 @@ function App() {
             <p>
               Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
             </p>
-            <span>Learn more</span>
+            <div className={style.learn_more_container_cup}>
+              <div className={style.learn_more_line_cup}></div>
+              <span className={style.learn_more}>Learn more</span>
+            </div>
           </div>
         </div>
         <div className={style.berry_container}>
@@ -100,16 +108,28 @@ function App() {
         <div className={style.footer_logo_container}>
           <img src={footer_logo} alt="logo" />
         </div>
-      
-        About
-        Services
-        Projects
+        <div className={style.footer_nav_list_container}>
+          <ul className={style.footer_nav_list}>
+            <li className={style.footer_nav_item}><a className={style.link}>About</a></li>
+            <li className={style.footer_nav_item}><a className={style.link}>Services</a></li>
+            <li className={style.footer_nav_item}><a className={style.link}>Projects</a></li>
+          </ul>
+        </div>
+        <div className={style.footer_icons_container}>
+          <ul className={style.footer_icons_list}>
+            <li className={style.footer_icon}><a className={style.link}><img src={facebook} alt="facebook icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link}><img src={instagram} alt="instagram icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link}><img src={twitter} alt="twitter icon" /></a></li>
+            <li className={style.footer_icon}><a className={style.link}><img src={pinterest} alt="pinterest icon" /></a></li>
+          </ul>  
+        </div>   
+        <div className={style.attribution}>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </div> 
       </footer>
   
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+
   
     </div>
   )

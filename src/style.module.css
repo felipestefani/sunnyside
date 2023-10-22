@@ -247,8 +247,106 @@
 }
 
 .footer_container {
-    background-color: #90D4C6;;
+    background-color: #90D4C6;
+    padding-top: 4.5rem;
 }
+
+.footer_logo_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    height: 2rem;
+}
+
+
+
+.footer_nav_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3.56rem;
+    margin-bottom: 5.5rem;
+}
+
+.footer_nav_item {
+    color: #458D7E;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5625rem; /* 138.889% */
+    letter-spacing: -0.00806rem;
+}
+
+.footer_icons_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    padding-bottom: 4.5rem;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.link, .contact_link {
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: white;
+    filter: brightness(0) invert(1);
+}
+
+.contact_link:hover {
+    cursor: pointer;
+    background-color: #ffffff5f;
+    color: white;
+}
+
+.link:visited {
+    color: none;
+}
+
+.learn_more_container_egg, .learn_more_container_cup {
+    position: relative;
+    display: flex;
+    width: max-content;
+}
+
+.learn_more_container_egg::after, .learn_more_container_cup::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 110%;
+    border-radius: 1.75rem;
+    height: 0.6rem;
+    top: 1rem;
+    left: -.3rem;
+    z-index: -2;
+}
+
+.learn_more_container_egg::after {
+    background-color: hsl(51, 100%, 49%, 0.3);
+}
+
+.learn_more_container_cup::after {
+    background-color: hsl(7, 99%, 70%, 0.3);
+}
+
+.learn_more_container_egg:hover::after {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.learn_more_container_cup:hover::after {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.learn_more_container_egg:hover, .learn_more_container_cup:hover {
+    cursor: pointer;
+}
+
 /*--------------------------------------- media queries -------------------------------- */
 @media (max-width: 700px) and (min-width: 375px) {
     .header_container {
