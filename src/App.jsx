@@ -11,8 +11,13 @@ import instagram from "./assets/images/icon-instagram.svg";
 import twitter from "./assets/images/icon-twitter.svg";
 import pinterest from "./assets/images/icon-pinterest.svg";
 import { Link} from "react-scroll";
+import Menu from "./components/Menu";
+import { useState } from "react";
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className={style.app_container}>
       <header className={style.header_container}>
@@ -21,7 +26,8 @@ function App() {
             <img id="logo_header" title="logo_header" src={logo} alt="sunnyside logo" />
           </div>
           <div className={style.navbar_items}>
-            <img className={style.hamburger_icon} src={hamburger} alt="menu hamburger" />
+            <img className={style.hamburger_icon} src={hamburger} alt="menu hamburger" onClick={() => setIsOpen(!isOpen) }/>
+            <Menu isOpen={isOpen} />
             <ul className={style.navbar_list}>
               <li><a className={`${style.navbar_item}`} href="https://www.linkedin.com/in/felipe-stefani-a35185116/" target="_blank">About</a></li>
               <li><a className={`${style.navbar_item}`} href="https://www.instagram.com/felipestefani/" target="_blank">Services</a></li>
